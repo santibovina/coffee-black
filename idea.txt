@@ -1,0 +1,8 @@
+Imagino una página web estilo one page sobre cosmética natural.
+las secciones que puede tener son: inicio, registro, contacto, productos, cursos
+en el inicio va un banner con el nombre de la marca y el navegador;
+a medida que descendemos tenemos los productos y cursos,
+y al final la sección de registro (en el que podemos ofrecer un
+descuento para aquellos que se anoten)
+y la sección contacto antes del footer
+en el footer van los derechos reservados, cuenta de instagram
