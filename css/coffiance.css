@@ -52,6 +52,7 @@ nav ul li:hover{
 
 p{
     font-size: 20px;
+    margin-left: 50px;
 }
 
 .baristas{
@@ -73,7 +74,6 @@ p{
     padding: 10px;
     color: #BE9063;
     font-size: 20px;
-    text-align: center;
 }
 
 footer{
