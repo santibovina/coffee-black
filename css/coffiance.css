@@ -1,29 +1,41 @@
-hmtl{
+/* #cfc6bd
+#c2906b
+#7b9aa4
+#415f6a
+#e3dcc9 */
+
+*{
     font-family: 'Montserrat', sans-serif;
 }
+
 body{
     margin: 0;
+    background-image: url(https://ideas.ted.com/wp-content/uploads/sites/3/2022/07/FINAL_Coffee.jpg);
+    background-repeat: no-repeat;
+    background-clip: padding-box;
 }
-
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 header{
-    background-color: #132226;
-    padding: 5px;
+    background-color: #415f6a;
+    padding: 0;
 }
 
 nav ul{
     list-style: none;
     overflow: hidden;
+    padding-left: 0px;
+    margin: 0px;
 }
 
 nav ul li{
-    float: left;
-    font-size: 23px;
+    float: right;
+    font-size: 16px;
 }
 
 nav ul li a{
     display: block;
-    padding: 15px;
-    color: #BE9063;
+    padding: 18px;
+    color: #e3dcc9;
     text-decoration: none;
 }
 
@@ -35,17 +47,17 @@ nav ul li:hover{
 }
 
 .sectiontop{
-    background-color: #6F1D1B;
+    background-color: #7b9aa4;
     text-align: center;
-    color: #BE9063;
+    color: #132226;
     padding: 10px;
     font-size: 20px;
 }
 
 .cafe{
     color: #040C0E;
-    background-color:#BE9063;
-    padding: 10px;
+    /* background-color:#e3dcc9; */
+    padding: 15px;
     padding-bottom: 50px;
     font-size: 25px;
 }
@@ -53,32 +65,34 @@ nav ul li:hover{
 p{
     font-size: 20px;
     margin-left: 50px;
+    margin-inline-end: 55%;
 }
 
 .baristas{
     color: #040C0E;
-    background-color: #A4978E;
-    padding: 10px;
+    /* background-color: #e3dcc9; */
+    padding: 15px;
     font-size: 25px;
 }
 
 .novedades{
     color: #040C0E;
-    background-color: #6F1D1B;
-    padding: 10px;
+    /* background-color: #e3dcc9; */
+    padding: 15px;
     font-size: 25px;
 }
 
 .nosotros{
-    background-color: #132226;
-    padding: 10px;
-    color: #BE9063;
+    /* background-color: #132226; */
+    border-top: #e3dcc9 dashed;
+    padding: 15px;
+    color: #e3dcc9;
     font-size: 20px;
 }
 
 footer{
-    color:#A4978E;
-    background-color:#040C0E;
+    color:#e3dcc9;
+    background-color:#415f6a;
     text-align: center;
     padding: 15px;
 }
