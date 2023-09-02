@@ -47,6 +47,18 @@ nav ul li:hover{
     text-underline-offset: 5px;
 }
 
+#logoheader{
+    float: left;
+    margin-left: 25px;
+    padding-top: 5px;
+    border-bottom: solid #000000;
+}
+
+.whitespace{
+    height: 70px;
+    width: max-content;
+}
+
 .sectiontop{
     background-color: #ffffff;
     text-align: center;
@@ -56,14 +68,6 @@ nav ul li:hover{
     border-bottom: #000000 dotted;
 }
 
-.cafe{
-    color: #040C0E;
-    /* background-color:#e3dcc9; */
-    padding: 15px;
-    padding-bottom: 50px;
-    font-size: 25px;
-    margin-left: 35%;
-}
 
 p{
     font-size: 20px;
@@ -94,10 +98,10 @@ p{
     margin-left: 35%;
 }
 
-main{
+/* main{
     background-image: url(/img/coffiance/COFFEE_BLACK.png);
     background-repeat: no-repeat;
-}
+} */
 
 .fotosbaristas{
     border: solid black;
@@ -114,6 +118,7 @@ main{
 }
 
 footer{
+    margin-top: 10%;
     display: block;
     color:#ffffff;
     background-color:#000000;
