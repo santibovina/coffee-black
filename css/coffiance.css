@@ -59,66 +59,55 @@ nav ul li:hover{
     width: max-content;
 }
 
-.sectiontop{
-    background-color: #ffffff;
-    text-align: center;
-    color: #000000;
-    padding: 10px;
-    font-size: 20px;
-    border-bottom: #000000 dotted;
+.container{
+    display: grid;
+    grid-template-columns: 135px 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    ". section section section"
+    "main content content content";
+
 }
 
-
-p{
-    font-size: 20px;
-    margin-left: 50px;
-    margin-inline-end: 10%;
-}
-
-.baristas{
-    color: #040C0E;
-    /* background-color: #e3dcc9; */
-    padding: 15px;
+.item-section-title{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    justify-self: center;
     font-size: 25px;
-    margin-left: 35%;
 }
 
-.novedades{
-    color: #040C0E;
-    /* background-color: #e3dcc9; */
-    padding: 15px;
-    font-size: 25px;
-    margin-left: 35%;
+.item-logo{
+    grid-area: main;
+    justify-self: left;
+}
+.item-a{
+    grid-area: content;
+    align-self: center;
+    justify-self: left;
+    padding: 65px;
+    border-right: solid black 1px;
 }
 
-.nosotros{
-    padding: 15px;
-    color: #000000;
-    font-size: 20px;
-    margin-left: 35%;
+.item-b{
+    grid-area: content;
+    align-self: center;
+    justify-self: center;
+    padding: 65px;
+    border-right: solid black 1px;
+    border-left: solid black 1px;
 }
 
-/* main{
-    background-image: url(/img/coffiance/COFFEE_BLACK.png);
-    background-repeat: no-repeat;
-} */
-
-.fotosbaristas{
-    border: solid black;
-    width: 150px;
-    height: 200px;
-    padding: 15px;
-    margin: 5px;
-
-}
-
-.fotosbaristas img{
-    height: auto;
-    width: 100%;
+.item-c{
+    grid-area: content;
+    align-self: center;
+    justify-self: right;
+    padding: 65px;
+    border-left: solid black 1px;
+    
 }
 
 footer{
-    margin-top: 10%;
+    margin-top: 5%;
     display: block;
     color:#ffffff;
     background-color:#000000;
