@@ -1,8 +1,3 @@
-/* #cfc6bd
-#c2906b
-#7b9aa4
-#415f6a
-#e3dcc9 */
 
 *{
     font-family: 'Montserrat', sans-serif;
@@ -37,21 +32,14 @@ nav ul li a{
     padding: 18px;
     color: #000000;
     text-decoration: none;
-    border-bottom: #000000 3px solid;
 }
 
 nav ul li:hover{
+    
     text-decoration: underline;
     text-decoration-color: #000000;
     text-decoration-line: underline;
     text-underline-offset: 5px;
-}
-
-#logoheader{
-    float: left;
-    margin-left: 25px;
-    padding-top: 5px;
-    border-bottom: solid #000000;
 }
 
 .whitespace{
@@ -70,12 +58,6 @@ nav ul li:hover{
     border-top: solid 1px black;
 }
 
-.container{
-    display: grid;
-    grid-template-columns: 135px 1fr 1fr 1fr;
-    grid-template-rows: 50px 200px 200px;
-}
-
 .container-landing{
     display: grid;
     grid-template-columns: 135px 1fr 1fr 135px;
@@ -91,84 +73,7 @@ nav ul li:hover{
     align-self: center;
 }
 
-.item-logo{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 4;
-    justify-self: left;
-}
-
-.item-section-title{
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    text-align: center;
-    font-size: 20px;
-    align-self: center;
-    border-bottom: solid 1px black;
-}
-
-.prof1{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 4;
-    align-self: center;
-    justify-self: center;
-    padding-top: 100px;
-}
-
-.prof1-text{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    align-self:self-start;
-    justify-self: center;
-}
-
-.prof2{
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 4;
-    align-self: center;
-    justify-self: center;
-    padding-top: 100px;
-}
-
-.prof2-text{
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    align-self:self-start;
-    justify-self: center;
-}
-
-.prof3{
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 4;
-    align-self: center;
-    justify-self: center;
-    padding-top: 100px;
-}
-
-.prof3-text{
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    align-self:self-start;
-    justify-self: center;
-}
-
 footer{
-    position:sticky;
     margin-top: 15%;
     display: block;
     color:#ffffff;
