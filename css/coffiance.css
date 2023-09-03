@@ -61,49 +61,85 @@ nav ul li:hover{
 
 .container{
     display: grid;
-    grid-template-columns: 135px 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-    ". section section section"
-    "main content content content";
+    grid-template-columns: 135px 1fr 1fr 1fr;
+    grid-template-rows: 50px 200px 200px 179px;
 
-}
-
-.item-section-title{
-    grid-column-start: 2;
-    grid-row-start: 2;
-    justify-self: center;
-    font-size: 25px;
 }
 
 .item-logo{
-    grid-area: main;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
     justify-self: left;
-}
-.item-a{
-    grid-area: content;
-    align-self: center;
-    justify-self: left;
-    padding: 65px;
-    border-right: solid black 1px;
 }
 
-.item-b{
-    grid-area: content;
+.item-section-title{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+    font-size: 20px;
+    align-self: center;
+    border-bottom: solid 1px black;
+}
+
+.prof1{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
     align-self: center;
     justify-self: center;
-    padding: 65px;
-    border-right: solid black 1px;
-    border-left: solid black 1px;
+    padding-top: 100px;
 }
 
-.item-c{
-    grid-area: content;
+.prof1-text{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    align-self:self-start;
+    justify-self: center;
+}
+
+.prof2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
     align-self: center;
-    justify-self: right;
-    padding: 65px;
-    border-left: solid black 1px;
-    
+    justify-self: center;
+    padding-top: 100px;
+}
+
+.prof2-text{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    align-self:self-start;
+    justify-self: center;
+}
+
+.prof3{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    align-self: center;
+    justify-self: center;
+    padding-top: 100px;
+}
+
+.prof3-text{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    align-self:self-start;
+    justify-self: center;
 }
 
 footer{
