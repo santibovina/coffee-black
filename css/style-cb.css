@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 2.4fr 0.3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header header"
+      "main main main"
+      "footer footer footer";
+    
+}
+  
+.header {
+    display: grid;
+    grid-template-columns: 1fr 5.2fr 0.7fr 0.7fr 0.7fr 0.7fr 0.7fr 0.5fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-area: header;
+}
+  
+.menu-nav {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    gap: 0px 5px;
+    grid-auto-flow: row;
+    grid-area: 2 / 4 / 3 / 9;
+}
+  
+.inicio {
+    grid-area: 2 / 3 / 3 / 4;
+    justify-self: center;
+}
+  
+.cafe {
+    grid-area: 2 / 5 / 3 / 4;
+    justify-self: center;
+}
+  
+.baristas {
+    grid-area: 2 / 5 / 3 / 6;
+    justify-self: center;
+}
+  
+.novedades {
+    grid-area: 2 / 6 / 3 / 7;
+    justify-self: center;
+}
+  
+.nosotros {
+    grid-area: 2 / 7 / 3 / 8;
+    justify-self: center;
+}
+  
+.logo-chico {
+    grid-area: 1 / 1 / 4 / 2;
+}
+  
+.main { display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 1.9fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "logo-vert main-content main-content main-content main-content main-content"
+      "logo-vert main-content main-content main-content main-content main-content"
+      "logo-vert main-content main-content main-content main-content main-content";
+    grid-area: main;
+}
+  
+.logo-vert { grid-area: logo-vert; }
+  
+.main-content {
+    display: grid;
+    grid-template-columns: 0.2fr 200px 0.2fr 200px 0.2fr 200px 0.2fr;
+    grid-template-rows: 0.1fr 0.3fr 0.2fr 2.7fr 0.3fr 2.4fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . . . . . ."
+      ". content-title content-title content-title content-title content-title ."
+      ". . . . . . ."
+      ". content-photo-1 . content-photo-2 . content-photo-3 ."
+      ". photo-title-1 . photo-title-2 . photo-title-3 ."
+      ". content-text-1 . content-text-2 . content-text-3 .";
+    grid-area: main-content;
+    text-align: left;
+}
+  
+.content-title {
+    grid-area: content-title;
+    border-bottom: solid 5px black;
+    font-size: medium;
+}
+  
+.content-photo-1 {
+    grid-area: content-photo-1;
+}
+  
+.content-photo-2 {
+    grid-area: content-photo-2;
+}
+
+.content-photo-3 {
+    grid-area: content-photo-3;
+}
+
+.photo-title-1 { grid-area: photo-title-1; }
+
+.photo-title-2 { grid-area: photo-title-2; }
+
+.photo-title-3 { grid-area: photo-title-3; }
+
+.content-text-1 { grid-area: content-text-1; }
+
+.content-text-2 { grid-area: content-text-2; }
+
+.content-text-3 { grid-area: content-text-3; }
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". . ."
+        ". . ."
+        ". . .";
+    grid-area: footer;
+}
+  
