@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .container {
@@ -131,6 +131,6 @@
     grid-area: footer;
     background-color: #000;
     color: white;
-    font-size: 7px; 
+    font-size: 10px; 
   }
   .footer-content { grid-area: footer-content; text-align: center; align-self: center;}
