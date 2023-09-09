@@ -3,139 +3,198 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+p {
+    font-size: 12px;
+}
+
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 0.8fr 1.4fr 0.8fr;
     grid-template-rows: 0.3fr 2.4fr 0.3fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas:
-      "header header header"
-      "main main main"
-      "footer footer footer";
-    
 }
 
 .header {
-    display: grid; 
-    /* grid-template-columns: 0.2fr 0.4fr;  */
-    /* grid-template-rows: 0.6fr; */
-    gap: 0px 0px; 
-    grid-template-areas: 
-        "inicio cafe baristas novedades"; 
-    grid-area: header;
-    grid-auto-flow: row;
+    grid-area: 1 / 1 / 2 / 4;
     border-bottom: solid black 2px;
-  }
-
-.inicio {
-    grid-area: inicio;
-    justify-self: center; 
-    align-self: center; 
-}
-.cafe {
-    grid-area: cafe;
-    justify-self: center;
-    align-self: center;
-}
-.baristas {
-    grid-area: baristas;
-    justify-self: center;
-    align-self: center;
-}
-.novedades {
-    grid-area: novedades;
-    justify-self: center;
-    align-self: center;
 }
 
 .main {
     display: grid;
-    grid-template-columns: 0.7fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.1fr 1.9fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 25px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". content-title content-title content-title"
+        ". content-1 content-2 content-3"
+        ". content-1 content-2 content-3"
+        ". content-1 content-2 content-3"
+        ". content-1 content-2 content-3";
+    grid-area: 2 / 1 / 3 / 4;
+}
+
+.content-title {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      ". logo-vert main-content main-content main-content main-content main-content"
-      ". logo-vert main-content main-content main-content main-content main-content"
-      ". logo-vert main-content main-content main-content main-content main-content";
-    grid-area: main;
+        ". content-title-area .";
+    justify-self: center;
+    align-self: center;
+    grid-area: content-title;
+    font-size: 25px;
+    border-bottom: solid 1px black;
 }
-  
+
+.content-title-area {
+    justify-self: center;
+    align-self: center;
+    grid-area: content-title-area;
+}
+
 .logo-vert {
     grid-area: logo-vert;
-    grid-column-start: 2;
-    grid-row-start: 2;
-    grid-column-end: 3;
-    grid-row-end: 4;
-    align-self: center;
 }
-  
-.main-content {
+
+.content-1 {
     display: grid;
-    grid-template-columns: 0.2fr 200px 0.2fr 200px 0.2fr 200px 0.2fr;
-    grid-template-rows: 0.5fr 0.3fr 0.2fr 2.7fr 0.3fr 2.4fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1.2fr 0.2fr 1.8fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      ". . . . . . ."
-      ". content-title content-title content-title content-title content-title ."
-      ". . . . . . ."
-      ". content-photo-1 . content-photo-2 . content-photo-3 ."
-      ". photo-title-1 . photo-title-2 . photo-title-3 ."
-      ". content-text-1 . content-text-2 . content-text-3 .";
-    grid-area: main-content;
-    text-align: left;
+        ". content-photo-1 content-photo-1 ."
+        ". content-photo-1 content-photo-1 ."
+        ". content-head-1 content-head-1 ."
+        ". content-description-1 content-description-1 .";
+    grid-area: content-1;
 }
-  
-.content-title {
-    grid-area: content-title;
-    border-bottom: solid 5px black;
-    font-size: 25px;
-}
-  
+
 .content-photo-1 {
     grid-area: content-photo-1;
 }
-  
+
+.content-head-1 {
+    grid-area: content-head-1;
+}
+
+.content-description-1 {
+    grid-area: content-description-1;
+    padding-top: 7px;
+}
+
+.content-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1.2fr 0.2fr 1.8fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". content-photo-2 content-photo-2 ."
+        ". content-photo-2 content-photo-2 ."
+        ". content-head-2 content-head-2 ."
+        ". content-description-2 content-description-2 .";
+    grid-area: content-2;
+}
+
 .content-photo-2 {
     grid-area: content-photo-2;
+}
+
+.content-head-2 {
+    grid-area: content-head-2;
+}
+
+.content-description-2 {
+    grid-area: content-description-2;
+    padding-top: 7px;
+}
+
+.content-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1.2fr 0.2fr 1.8fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". content-photo-3 content-photo-3 ."
+        ". content-photo-3 content-photo-3 ."
+        ". content-head-3 content-head-3 ."
+        ". content-description-3 content-description-3 .";
+    grid-area: content-3;
 }
 
 .content-photo-3 {
     grid-area: content-photo-3;
 }
 
-.photo-title-1 { grid-area: photo-title-1; }
+.content-head-3 {
+    grid-area: content-head-3;
+}
 
-.photo-title-2 { grid-area: photo-title-2; }
+.content-description-3 {
+    grid-area: content-description-3;
+    padding-top: 7px;
+}
 
-.photo-title-3 { grid-area: photo-title-3; }
+.header-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". . . ."
+        "inicio cafe baristas novedades"
+        ". . . .";
+    grid-area: 1 / 2 / 2 / 3;
+}
 
-.content-text-1 { grid-area: content-text-1; }
+.inicio {
+    justify-self: center;
+    align-self: center;
+    grid-area: inicio;
+}
 
-.content-text-2 { grid-area: content-text-2; }
+.cafe {
+    justify-self: center;
+    align-self: center;
+    grid-area: cafe;
+}
 
-.content-text-3 { grid-area: content-text-3; }
+.baristas {
+    justify-self: center;
+    align-self: center;
+    grid-area: baristas;
+}
+
+.novedades {
+    justify-self: center;
+    align-self: center;
+    grid-area: novedades;
+}
 
 .footer {
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 0.5fr 1fr 0.5fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      ". . ."
-      ". footer-content ."
-      ". . ."; 
-    grid-area: footer;
-    background-color: #000;
-    color: white;
-    font-size: 10px; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        ". footer-content ."
+        ". footer-content ."
+        ". footer-content .";
+    grid-area: 3 / 1 / 4 / 4;
+    background-color: #333;
+    color: #fff;
 }
 
-p {
-    font-size: 12px;
-    font-stretch: condensed;
+.footer-content {
+    grid-area: footer-content;
+    justify-self: center;
+    align-self: center;
 }
-
-.footer-content { grid-area: footer-content; text-align: center; align-self: center;}
