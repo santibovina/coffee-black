@@ -155,6 +155,18 @@ p {
     grid-area: 1 / 2 / 2 / 3;
 }
 
+.header-nav a {
+    text-decoration: None;
+    color: black;
+}
+
+.header-nav a:hover {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: teal;
+    border-bottom: solid 1px black;
+}
+
 .inicio {
     justify-self: center;
     align-self: center;
@@ -197,4 +209,112 @@ p {
     grid-area: footer-content;
     justify-self: center;
     align-self: center;
+}
+
+/*  */
+/*  */
+
+.container-landing {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2.5fr 1fr 1fr 0.5fr 1.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". . ."
+        "logo-horizontal logo-horizontal logo-horizontal"
+        "logo-horizontal logo-horizontal logo-horizontal"
+        "menu menu menu"
+        ". iframe-audio .";
+}
+
+.logo-horizontal {
+    grid-area: logo-horizontal;
+    justify-self: center;
+    align-self: center;
+    border-bottom: solid black 2px;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 2fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". . . . . . . ."
+        ". . menu-items menu-items menu-items menu-items . ."
+        ". . . . . . . .";
+    grid-area: menu;
+    margin-top: 25px;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 2fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". . . ."
+        "Inicio Café Baristas Novedades"
+        ". . . .";
+    grid-area: menu-items;
+}
+
+.menu-items a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu-items a:hover {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: teal;
+    border-bottom: solid 1px black;
+}
+
+.Inicio {
+    grid-area: Inicio;
+    justify-self: center;
+    align-self: center;
+}
+
+.Café {
+    grid-area: Café;
+    justify-self: center;
+    align-self: center;
+}
+
+.Baristas {
+    grid-area: Baristas;
+    justify-self: center;
+    align-self: center;
+}
+
+.Novedades {
+    grid-area: Novedades;
+    justify-self: center;
+    align-self: center;
+}
+
+.iframe-audio {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1.2fr 0.6fr 1.2fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". . ."
+      "audio audio audio"
+      ". . ."; 
+    grid-area: iframe-audio;
+    justify-self: center;
+  }
+
+.audio {
+    grid-area: audio;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-column-end: 4;
+    grid-row-end: 3;
 }
