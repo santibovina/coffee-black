@@ -335,3 +335,223 @@ p {
     grid-column-end: 4;
     grid-row-end: 3;
 }
+
+/*  */
+
+/* .container-inicio {
+    display: grid;
+    grid-template-columns: 0.8fr 1.4fr 0.8fr;
+    grid-template-rows: 0.3fr 2.4fr 0.3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+}
+
+.header {
+    grid-area: 1 / 1 / 2 / 4;
+    border-bottom: solid black 2px;
+}
+
+.header-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". . . ."
+        "inicio cafe baristas novedades"
+        ". . . .";
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.inicio {
+    justify-self: center;
+    align-self: center;
+    grid-area: inicio;
+}
+
+.cafe {
+    justify-self: center;
+    align-self: center;
+    grid-area: cafe;
+}
+
+.baristas {
+    justify-self: center;
+    align-self: center;
+    grid-area: baristas;
+}
+
+.novedades {
+    justify-self: center;
+    align-self: center;
+    grid-area: novedades;
+}
+
+.main-inicio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". content-title content-title ."
+        ". content-inicio-1 content-inicio-2 .";
+    grid-area: 2 / 1 / 3 / 4;
+}
+
+.content-title {
+    justify-self: center;
+    align-self: center;
+    grid-area: content-title;
+}
+
+.content-inicio-1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.4fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". . logo-inicio .";
+    grid-area: content-inicio-1;
+}
+
+.logo-inicio {
+    justify-self: center;
+    align-self: stretch;
+    grid-area: logo-inicio;
+}
+
+.content-inicio-2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.4fr 1.6fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". content-inicio content-inicio .";
+    grid-area: content-inicio-2;
+    justify-self: center;
+    align-self: center;
+}
+
+.content-inicio {
+    grid-area: content-inicio;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". footer-content ."
+        ". footer-content ."
+        ". footer-content .";
+    grid-area: 3 / 1 / 4 / 4;
+}
+
+.footer-content {
+    grid-area: footer-content;
+} */
+
+.container-inicio {
+    display: grid;
+    grid-template-columns: 0.8fr 1.4fr 0.8fr;
+    grid-template-rows: 0.41fr 2.4fr 0.35fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+}
+
+.header {
+    grid-area: 1 / 1 / 2 / 4;
+}
+
+.header-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". . . ."
+        "inicio cafe baristas novedades"
+        ". . . .";
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.inicio {
+    justify-self: center;
+    align-self: center;
+    grid-area: inicio;
+}
+
+.cafe {
+    justify-self: center;
+    align-self: center;
+    grid-area: cafe;
+}
+
+.baristas {
+    justify-self: center;
+    align-self: center;
+    grid-area: baristas;
+}
+
+.novedades {
+    justify-self: center;
+    align-self: center;
+    grid-area: novedades;
+}
+
+.main-inicio {
+    display: grid;
+    grid-template-columns: 0.8fr 1.4fr 0.8fr;
+    grid-template-rows: 0.6fr 1.9fr 1fr 3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". . ."
+        ". content-logo ."
+        ". content-inicio ."
+        ". content-inicio ."
+        "carrousel-fotos carrousel-fotos carrousel-fotos";
+    grid-area: 2 / 1 / 3 / 4;
+}
+
+.content-logo {
+    justify-self: center;
+    align-self: center;
+    grid-area: content-logo;
+}
+
+.content-inicio {
+    grid-area: content-inicio;
+    text-align: center;
+    margin-top: 25px;
+    line-height: 25px;
+
+}
+
+.carrousel-fotos {
+    grid-area: carrousel-fotos;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". footer-content ."
+        ". footer-content ."
+        ". footer-content .";
+    grid-area: 3 / 1 / 4 / 4;
+}
+
+.footer-content {
+    grid-area: footer-content;
+}
