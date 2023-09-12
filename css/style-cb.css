@@ -460,7 +460,7 @@ p {
 .container-inicio {
     display: grid;
     grid-template-columns: 0.8fr 1.4fr 0.8fr;
-    grid-template-rows: 0.41fr 2.4fr 0.35fr;
+    grid-template-rows: 0.42fr 2.4fr 0.35fr;
     gap: 0px 0px;
     grid-auto-flow: row;
 }
@@ -521,6 +521,10 @@ p {
     grid-area: 2 / 1 / 3 / 4;
 }
 
+.main-inicio p {
+    font-size: 15px;
+}
+
 .content-logo {
     justify-self: center;
     align-self: center;
@@ -530,9 +534,8 @@ p {
 .content-inicio {
     grid-area: content-inicio;
     text-align: center;
-    margin-top: 25px;
-    line-height: 25px;
-
+    margin-top: 27px;
+    line-height: 23px;
 }
 
 .carrousel-fotos {
