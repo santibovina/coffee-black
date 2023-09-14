@@ -5,6 +5,8 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+
+
 .menu-navegador {
     display: flex;
     flex-wrap: wrap;
@@ -15,17 +17,23 @@
     border-bottom: solid black 1px;;
 }
 
-.menu-items{
-    font-size: 1rem;
+ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
 
 }
 
-.menu-items a {
+ul li {
+    font-size: 1rem;
+}
+
+ul li a {
     text-decoration: none;
     color: black;
 }
 
-.menu-items:hover {
+ul li a:hover {
     text-decoration: underline;
     border-bottom: solid rgb(14, 118, 126) 1px;
     text-underline-offset: 0.5rem;
@@ -43,28 +51,33 @@
 
 .contenido-titulo p {
     border-bottom: solid black 1px;
+    width: 15rem;
+    text-align: center;
 }
 
-.contenido-fotos {
-    display: flex;
-    height: 18rem;
+.contenido-general {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, auto);
     justify-content: space-evenly;
-    margin-top: 0.7rem;
 }
 
-.contenido-nombres {
-    display: flex;
-    font-size: 1rem;
-    justify-content: space-evenly;
-    gap: 5rem
+.contenido-general img {
+    border-bottom: solid red 1px;
 }
 
-.contenido-texto {
-    display: flex;
-    font-size: 0.7rem;
+.contenido-general h3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
     justify-content: center;
-    margin-top: 15px;
-    height: 10rem;
+}
+
+.contenido-general p {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    font-size: 1rem;
+    margin-bottom: 3rem;
 }
 
 .footer {
