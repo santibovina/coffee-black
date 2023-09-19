@@ -196,6 +196,7 @@ ul li a:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 3rem;
     }
     .menu-navegador-landing {
         border-bottom: none;
