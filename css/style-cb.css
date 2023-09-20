@@ -170,7 +170,7 @@ ul li a:hover {
     display: flex;
     flex-direction: column;
     width: auto;
-    height: 42rem;
+    height: 38rem;
     justify-content: center;
     align-items: center;
 }
