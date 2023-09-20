@@ -15,6 +15,24 @@
     border-bottom: solid black 1px;
 }
 
+.submenu {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -1.2rem;
+    height: 1.5rem;
+    justify-content:space-evenly;
+    align-items: center;
+    color: black;
+}
+
+.submenu ul {
+    gap: 1rem;
+}
+
+.submenu ul li {
+    font-size: 0.8rem;
+}
+
 .menu-navegador-landing {
     display: flex;
     flex-wrap: wrap;
@@ -50,7 +68,7 @@ ul li a {
 ul li a:hover {
     text-decoration: underline;
     border-bottom: solid rgb(14, 118, 126) 1px;
-    text-underline-offset: 0.5rem;
+    text-underline-offset: 0.4rem;
     text-decoration-color: rgb(0, 0, 0);
 }
 
@@ -110,8 +128,8 @@ ul li a:hover {
     margin-top: 1rem;
     font-size: 0.8rem;
     margin-bottom: 1.5rem;
-    width: 16rem;
-    text-align: left;
+    width: 12rem;
+    text-align: center;
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -131,6 +149,28 @@ ul li a:hover {
     flex-direction: column;
     width: auto;
     height: 35rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido-principal-novedades {
+    display: grid;
+    grid-template-columns: repeat(4, 20rem);
+    justify-content: center;
+    justify-items: center;
+    align-items: start;
+    height: 38rem;
+}
+
+.contenido-principal-novedades p {
+    width: 12rem;
+}
+
+.contenido-novedades {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 42rem;
     justify-content: center;
     align-items: center;
 }
@@ -208,6 +248,17 @@ ul li a:hover {
         text-align: center;
         gap: 0.5rem;
         padding-top: 2rem;
+    }
+    .contenido-principal-novedades {
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+    }
+    .contenido-novedades {
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        margin-top: 2rem;
     }
     .landing {
         margin-top: 7rem;
