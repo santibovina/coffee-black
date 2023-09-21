@@ -89,6 +89,21 @@ ul li a:hover {
     text-align: center;
 }
 
+.contenido-intro {
+    display: flex;
+    height: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+    margin-top: -1rem;
+}
+
+.contenido-intro p {
+    font-size: 0.8rem;
+    text-align: center;
+    width: 35rem;
+}
+
 .contenido-principal {
     display: grid;
     grid-template-columns: repeat(3, 24rem);
@@ -234,6 +249,7 @@ ul li a:hover {
         display: flex;
         font-size: 0.8rem;
         line-height: 1.3rem;
+        width: 20rem;
     }
     .contenido-titulo p {
         margin-top: 10rem;
@@ -286,6 +302,19 @@ ul li a:hover {
     }
     .landing img {
         width: 20rem;
+    }
+    .contenido-intro {
+        display: flex;
+        height: 2.5rem;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 4rem;
+        margin-top: -1rem;
+    }
+    .contenido-intro p {
+        font-size: 0.8rem;
+        text-align: center;
+        width: 25rem;
     }
     .footer {
         height: 6rem;
