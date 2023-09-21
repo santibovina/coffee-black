@@ -214,7 +214,7 @@ ul li a:hover {
 
 .footer {
     display: grid;
-    grid-template-columns: repeat(3, 3fr);
+    grid-template-columns: repeat(3, 5fr);
     grid-template-rows: auto;
     color: whitesmoke;
     background-color: #333;
@@ -225,6 +225,12 @@ ul li a:hover {
 }
 
 .footer a {
+    color: whitesmoke;
+    text-decoration: none;
+    align-content: center;
+}
+
+.footer form {
     color: whitesmoke;
     text-decoration: none;
     align-content: center;
@@ -250,6 +256,7 @@ ul li a:hover {
         font-size: 0.8rem;
         line-height: 1.3rem;
         width: 20rem;
+        margin-top: -0.8rem;
     }
     .contenido-titulo p {
         margin-top: 10rem;
@@ -309,14 +316,19 @@ ul li a:hover {
         align-items: center;
         justify-content: center;
         margin-bottom: 4rem;
-        margin-top: -1rem;
+        margin-top: 2rem;
     }
     .contenido-intro p {
         font-size: 0.8rem;
         text-align: center;
-        width: 25rem;
+        width: 23rem;
     }
     .footer {
-        height: 6rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        height: 7rem;
+        align-items: center;
+        justify-content: center;
     }
 }
