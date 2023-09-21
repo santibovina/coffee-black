@@ -175,6 +175,21 @@ ul li a:hover {
     align-items: center;
 }
 
+.contenido-novedades a {
+    text-decoration: none;
+    color: black;
+}
+
+.contenido-principal-novedades-cursos {
+    display: grid;
+    grid-template-columns: repeat(2, 20rem);
+    grid-template-rows: repeat(3, 20rem);
+    justify-content: center;
+    justify-items: center;
+    align-items: start;
+    height: auto;
+}
+
 .contenido-inicio p {
     display: grid;
     grid-template-columns: repeat(auto-fill, 50rem);
