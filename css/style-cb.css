@@ -211,6 +211,38 @@ ul li a:hover {
     line-height: 1.5rem;
 }
 
+.contenido-formulario {
+    display: flex;
+    flex-direction: column;
+    height: 38rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido-formulario p {
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 1.5rem;
+    width: 42rem;
+    margin-top: 3rem;
+}
+
+.contenido-formulario img {
+    width: 30rem;
+}
+
+form {
+    padding: 4rem;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+form label {
+    font-size: 0.8rem;
+    padding-inline: 0.5rem;
+}
+
 .footer {
     display: grid;
     grid-template-columns: repeat(3, 5fr);
@@ -331,6 +363,35 @@ ul li a:hover {
         font-size: 0.7rem;
         text-align: center;
         width: 23rem;
+    }
+    .contenido-formulario {
+        display: flex;
+        flex-direction: column;
+        height: 38rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenido-formulario p {
+        display: flex;
+        font-size: 0.8rem;
+        line-height: 1.3rem;
+        width: 20rem;
+        margin-top: 2rem;
+    }
+    .contenido-formulario img {
+        width: 20rem;
+        margin-top: -10rem;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        row-gap: 0.3rem;
+    }
+    form label {
+        font-size: 0.8rem;
     }
     .footer {
         display: flex;
