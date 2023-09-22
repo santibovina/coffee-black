@@ -69,7 +69,6 @@ ul li a:hover {
     text-decoration: underline;
     border-bottom: solid rgb(14, 118, 126) 1px;
     text-underline-offset: 0.4rem;
-    text-decoration-color: rgb(0, 0, 0);
 }
 
 .contenido-titulo {
@@ -243,13 +242,20 @@ ul li a:hover {
         margin-bottom: 5rem;
     }
     .menu-navegador ul {
-        flex-direction: column;
+        flex-direction: row;
         text-align: center;
-        gap: 0.5rem;
+        gap: 0.9rem;
+        border-bottom: solid black 1px;
+    }
+    .menu-navegador ul li {
+        flex-direction: row;
+        text-align: center;
+        gap: 0.9rem;
+        margin-bottom: 0.9rem;
     }
     .contenido-inicio img {
         width: 20rem;
-        margin-top: -8rem;
+        margin-top: -16rem;
     }
     .contenido-inicio p {
         display: flex;
@@ -259,7 +265,7 @@ ul li a:hover {
         margin-top: -0.8rem;
     }
     .contenido-titulo p {
-        margin-top: 10rem;
+        margin-top: 1rem;
         margin-bottom: 10rem;
     }
     .contenido-principal {
@@ -277,14 +283,17 @@ ul li a:hover {
     }
     .menu-navegador-landing {
         border-bottom: none;
-        margin-top: 2rem;
+        margin-top: 1rem;
         margin-bottom: 5rem;
     }
     .menu-navegador-landing ul {
-        flex-direction: column;
+        flex-direction: row;
         text-align: center;
-        gap: 0.5rem;
+        gap: 0.9rem;
         padding-top: 2rem;
+    }
+    ul li {
+        font-size: 0.8rem;
     }
     .contenido-principal-novedades {
         display: flex;
@@ -305,7 +314,7 @@ ul li a:hover {
         margin-top: 2rem;
     }
     .landing {
-        margin-top: 7rem;
+        margin-top: 12rem;
     }
     .landing img {
         width: 20rem;
@@ -316,10 +325,10 @@ ul li a:hover {
         align-items: center;
         justify-content: center;
         margin-bottom: 4rem;
-        margin-top: 2rem;
+        margin-top: -5rem;
     }
     .contenido-intro p {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         text-align: center;
         width: 23rem;
     }
