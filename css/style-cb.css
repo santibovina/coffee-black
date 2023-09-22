@@ -214,7 +214,7 @@ ul li a:hover {
 .contenido-formulario {
     display: flex;
     flex-direction: column;
-    height: 38rem;
+    height: 35rem;
     justify-content: center;
     align-items: center;
 }
@@ -232,7 +232,10 @@ ul li a:hover {
 }
 
 form {
-    padding: 4rem;
+    border: solid rgb(14, 118, 126) 1px;
+    border-radius: 1rem;
+    margin-top: 3.5rem;
+    padding: 2rem;
     align-items: center;
     justify-content: center;
     align-content: center;
@@ -241,6 +244,11 @@ form {
 form label {
     font-size: 0.8rem;
     padding-inline: 0.5rem;
+}
+
+button {
+    display: inline-flex;
+    margin-left: 1rem;
 }
 
 .footer {
@@ -388,10 +396,16 @@ form label {
         align-items: center;
         justify-content: center;
         align-content: center;
-        row-gap: 0.3rem;
+        row-gap: 0.4rem;
     }
     form label {
         font-size: 0.8rem;
+    }
+    button {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0.5rem;
+        margin-left: 0;
     }
     .footer {
         display: flex;
