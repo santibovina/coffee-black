@@ -2,35 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .menu-navegador {
     display: flex;
-    flex-wrap: wrap;
     height: 4rem;
     justify-content:space-evenly;
     align-items: center;
     color: black;
-    border-bottom: solid black 1px;
-}
-
-.submenu {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: -1.2rem;
-    height: 1.5rem;
-    justify-content:space-evenly;
-    align-items: center;
-    color: black;
-}
-
-.submenu ul {
-    gap: 1rem;
-}
-
-.submenu ul li {
-    font-size: 0.8rem;
+    border-bottom: solid #2a2a2a 1px;
 }
 
 .menu-navegador-landing {
@@ -39,7 +20,7 @@
     height: 4rem;
     justify-content:space-evenly;
     align-items: center;
-    color: black;
+    color: #2a2a2a;
 }
 
 .menu-navegador-landing ul {
@@ -62,7 +43,7 @@ ul li {
 
 ul li a {
     text-decoration: none;
-    color: black;
+    color: #2a2a2a;
 }
 
 ul li a:hover {
@@ -71,14 +52,23 @@ ul li a:hover {
     text-underline-offset: 0.4rem;
 }
 
+.inicio {
+    background-color: #fff;
+}
+
+.cafe {
+    background-color: #fff;
+}
+
 .contenido-titulo {
     display: flex;
     height: 4rem;
     align-items: center;
     justify-content: space-around;
     margin-top: 0.7rem;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-bottom: 1rem;
+    font-weight: 650;
 }
 
 .contenido-titulo p {
@@ -98,7 +88,7 @@ ul li a:hover {
 }
 
 .contenido-intro p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     text-align: center;
     width: 35rem;
 }
@@ -164,6 +154,7 @@ ul li a:hover {
     height: 35rem;
     justify-content: center;
     align-items: center;
+    color: #2a2a2a
 }
 
 .contenido-principal-novedades {
@@ -183,7 +174,7 @@ ul li a:hover {
     display: flex;
     flex-direction: column;
     width: auto;
-    height: 38rem;
+    height: 25rem;
     justify-content: center;
     align-items: center;
 }
@@ -205,7 +196,7 @@ ul li a:hover {
 .contenido-inicio p {
     display: grid;
     grid-template-columns: repeat(auto-fill, 50rem);
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-align: center;
     padding-top: 3rem;
     line-height: 1.5rem;
@@ -220,7 +211,7 @@ ul li a:hover {
 }
 
 .contenido-formulario p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     text-align: center;
     line-height: 1.5rem;
     width: 42rem;
@@ -256,7 +247,7 @@ button {
     grid-template-columns: repeat(3, 5fr);
     grid-template-rows: auto;
     color: whitesmoke;
-    background-color: #333;
+    background-color: #2a2a2a;
     align-content: center;
     text-align: center;
     font-size: 0.8rem;
@@ -293,19 +284,22 @@ button {
         gap: 0.9rem;
         margin-bottom: 0.9rem;
     }
+    .contenido-inicio {
+        height: 30rem;
+        margin-bottom: -5rem;
+    }
     .contenido-inicio img {
         width: 20rem;
-        margin-top: -16rem;
+        margin-top: -13rem;
     }
     .contenido-inicio p {
         display: flex;
         font-size: 0.8rem;
         line-height: 1.3rem;
         width: 20rem;
-        margin-top: -0.8rem;
     }
     .contenido-titulo p {
-        margin-top: 1rem;
+        margin-top: 6rem;
         margin-bottom: 10rem;
     }
     .contenido-principal {
@@ -365,7 +359,7 @@ button {
         align-items: center;
         justify-content: center;
         margin-bottom: 4rem;
-        margin-top: -5rem;
+        margin-top: -3rem;
     }
     .contenido-intro p {
         font-size: 0.7rem;
@@ -388,7 +382,7 @@ button {
     }
     .contenido-formulario img {
         width: 20rem;
-        margin-top: -10rem;
+        margin-top: -3rem;
     }
     form {
         display: flex;
