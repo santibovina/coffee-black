@@ -353,6 +353,10 @@ button {
     .landing img {
         width: 20rem;
     }
+    .landing a img {
+        width: 100%;
+        margin-top: 2rem;
+    }
     .contenido-intro {
         display: flex;
         height: 2.5rem;
