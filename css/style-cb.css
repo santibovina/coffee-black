@@ -473,6 +473,44 @@ form label {
         margin-top: 0.5rem;
         margin-left: 0;
     }
+    .material-symbols-outlined {
+        margin-top: -5rem;
+        font-size: 2rem;
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    }
+    .formulario-general {
+        height: 60rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .imgform {
+        margin-top: -8rem;
+        width: 11rem;
+    }
+    .item-formulario h3 {
+        margin-top: 1.8rem;
+        text-align: center;
+    }
+    .item-ubicacion {
+        margin-top: -1rem;
+        padding-right: 5rem;
+        margin-left: 4rem;
+    }
+    .item-ubicacion p {
+        text-align: center;
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+    }
+    .item-ubicacion h3 {
+        text-align: center;
+    }
     .footer {
         display: flex;
         flex-direction: column;
