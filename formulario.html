@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="/css/style-cb.css">
     <link rel="shortcut icon" href="img/flaticon.ico" type="image/x-icon">
 </head>
@@ -20,43 +21,70 @@
                     <a href="/inicio.html">Inicio</a>
                 </li>
                 <li>
-                    <a href="/cafe.html">Café</a>
+                    <a href="/inicio.html#cafe">Café</a>
                 </li>
                 <li>
-                    <a href="/baristas.html">Baristas</a>
+                    <a href="/inicio.html#baristas">Baristas</a>
                 </li>
                 <li>
-                    <a href="/lugares.html">Lugares</a>
+                    <a href="/inicio.html#lugares">Lugares</a>
                 </li>
                 <li>
-                    <a href="/novedades.html">Novedades</a>
+                    <a href="/inicio.html/#novedades">Novedades</a>
                 </li>
             </ul>
         </div>
     </header>
 
     <main>
-        <div class="contenido-formulario">
-            <img src="/img/coffee_black_hor.png" alt="logo" width="auto">
-                
-            <p>¡Unite a nuestra comunidad de amantes del café y mantenete al tanto de las últimas noticias, recetas exclusivas y
-                consejos de expertos! Suscribite a nuestro boletín informativo y descubrí un mundo de sabores y experiencias
-                relacionadas con el café. No te pierdas la oportunidad de ser parte de nuestra creciente familia de apasionados por
-                esta bebida tan especial. Ingresá tu correo electrónico a continuación y comienza a recibir el aroma del café
-                directamente en tu bandeja de entrada.</p>
-        
-
-            <form action="" target="_blank">
-                <label for="nombre_apellido">Nombre y apellido: </label>
-                <input type="text" name="nombre_apellido" id="nombre_apellido"
-                    size="20" required>
-                <label for="email">Email: </label>
-                <input type="email" name="email" id="email" required>
-                <button type="button" onclick="alert('Bienvenido!')">Enviar</button>
-            </form>
-         </div>
-        
-
+        <div class="formulario-general">
+            <img class="imgform" src="/img/coffee_black_hor.png" alt="logo">
+            <div class="item-ubicacion">
+                <h3>A dónde encontrarnos?</h3>
+                <p>Humberto Primo 650, Córdoba, Argentina</p>
+                <p>Teléfono: 0351-4512459</p>
+                <p>Mail: info@coffee-black.com.ar</p>
+                <br>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.258387380685!2d-64.19279162518123!3d-31.407006345796635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432993c68879dd9%3A0xd1e3edfac66d2818!2sTorre%20Capitalinas!5e0!3m2!1ses-419!2sar!4v1695659271274!5m2!1ses-419!2sar"
+                    width="300" height="320" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="item-formulario">
+                <h3>Dejanos tu comentario</h3>
+                <form action="" target="_blank">
+                    <label for="nombre_apellido">Nombre y apellido: </label>
+                    <input type="text" name="nombre_apellido" id="nombre_apellido" size="41" required>
+                    <br>
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" size="41" required>
+                    <br>
+                    <label id="comentlabel" for="comentarios">Comentarios: </label>
+                    <textarea name="comentarios" id="comentarios" cols="30" rows="6" required></textarea>
+                    <br>
+                    <input id="botones" type="submit" value="Enviar"
+                        onclick="alert('Tu mensaje fue enviado. Estamos en contacto!')">
+                    <input id="botones" type="reset" value="Borrar" onclick="alert('Los datos fueron borrados exitosamente')">
+                </form>
+            </div>
+            
+            <!-- <div class="contenido-formulario">
+                <img src="/img/coffee_black_hor.png" alt="logo" width="auto">
+                <form action="" target="_blank">
+                    <label for="nombre_apellido">Nombre y apellido: </label>
+                    <input type="text" name="nombre_apellido" id="nombre_apellido"
+                        size="20" required>
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" required>
+                    <br>
+                    <label id="comentlabel" for="comentarios">Comentarios: </label>
+                    <textarea name="comentarios" id="comentarios" cols="51" rows="5" required></textarea>
+                    <br>
+                    <input id="botones" type="submit" value="Enviar" onclick="alert('Tu mensaje fue enviado. Estamos en contacto!')">
+                    <input id="botones" type="reset" value="Borrar" onclick="alert('Los datos fueron borrados exitosamente')">
+                </form>
+            </div>    -->
+        </div>    
     </main>
 
     <footer>

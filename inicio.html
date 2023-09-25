@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COFFEE:BLACK</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=PT+Sans:wght@400;700&family=Roboto:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=PT+Sans:wght@400;700&family=Roboto:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="/css/style-cb.css">
     <link rel="shortcut icon" href="img/flaticon.ico" type="image/x-icon">
 </head>
@@ -120,8 +121,12 @@
         </section>
         <section id="lugares">
             <div class="contenido-titulo"><p>Lugares</p></div>
-            <div class="contenido-inicio">                
-                <h2 style="margin-top: -10rem; font-size: 2rem;">próximamente...</h2>
+            <div class="contenido-lugares">
+                <span class="material-symbols-outlined">
+                    map
+                </span>
+                <br>
+                <p>Próximamente</p>
             </div>
         </section>
         <section id="novedades">
@@ -179,10 +184,11 @@
                 <form action="" target="_blank">
                     <label for="nombre_apellido">Nombre y apellido: </label>
                     <input type="text" name="nombre_apellido" id="nombre_apellido"
-                        size="20" required>
+                        size="40" required>
                     <label for="email">Email: </label>
-                    <input type="email" name="email" id="email" required>
-                    <button type="button" onclick="alert('Bienvenido!')">Enviar</button>
+                    <input type="email" name="email" id="email" size="40" required>
+                    <br>
+                    <input id="botones" type="submit" value="Enviar" onclick="alert('Bienvenido!')">
                 </form>
              </div>
         </section>
