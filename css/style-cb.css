@@ -483,6 +483,7 @@ form label {
         justify-content: center;
         align-content: center;
         row-gap: 0.4rem;
+        padding: 1rem;
     }
     form label {
         font-size: 0.8rem;
