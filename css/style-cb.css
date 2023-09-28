@@ -73,15 +73,6 @@ ul li a:hover {
   'opsz' 24
 }
 
-.material-symbols-outlined:hover {
-    color: rgb(14, 118, 126);
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
-}
-
 .contenido-titulo {
     display: flex;
     height: 6rem;
