@@ -531,10 +531,10 @@ form label {
         margin: 0;
     }
     #boton_enviar {
-        margin-top: -0.9rem;
+        margin-top: 0.1rem;
     }
     #botones {
-        margin-top: -0.8rem;
+        margin-top: 1rem;
     }
     .material-symbols-outlined {
         margin-top: -5rem;
