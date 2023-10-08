@@ -53,7 +53,7 @@
             </div>
             <div class="item-formulario">
                 <h3>Dejanos tu comentario</h3>
-                <form action="" target="_blank">
+                <form id="formForm" onsubmit="validarFormularioContacto(event)">
                     <label for="nombre_apellido">Nombre y apellido: </label>
                     <input type="text" name="nombre_apellido" id="nombre_apellido" size="28" required>
                     <br>
@@ -63,8 +63,7 @@
                     <label id="comentlabel" for="comentarios">Comentarios: </label>
                     <textarea name="comentarios" id="comentarios" cols="30" rows="6" required></textarea>
                     <br>
-                    <input id="boton_enviar" type="submit" value="Enviar"
-                        onclick="alert('Tu mensaje fue enviado. Estamos en contacto!')">
+                    <input id="boton_enviar" type="submit" value="Enviar">
                     <input id="boton_borrar" type="reset" value="Borrar" onclick="alert('Los datos fueron borrados exitosamente')">
                 </form>
             </div>
@@ -80,6 +79,8 @@
 
         </div>
     </footer>
+
+    <script src="/js/validacion.js"></script>
 
 </body>
 
