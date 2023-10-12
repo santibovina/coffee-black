@@ -355,19 +355,19 @@ form label {
     margin-left: 0.5rem;
     margin-top: 0.5rem;
 }
+
 .boton-cielo-container{
     position:fixed;
     bottom: 6rem;
-    right: 0rem;
-    width: 6rem;
-    height: 6rem;
+    right: -2rem;
+    width: 5rem;
+    height: 5rem;
     z-index: -1;
 }
 
 .boton-arriba{
     width: 0rem;
     height: 0rem;
-    background:#fff;
     border-radius: 50%;
     cursor: pointer;
     transition: .2s;
@@ -379,7 +379,7 @@ form label {
 
 .boton-arriba i{
     position: absolute;
-    font-size: 3rem;
+    font-size: 2.4rem;
     top: 48%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
@@ -584,7 +584,7 @@ form label {
     .contenido-intro p {
         font-size: 0.7rem;
         text-align: center;
-        width: 23rem;
+        width: 21rem;
     }
     .contenido-formulario {
         display: flex;
@@ -720,5 +720,65 @@ form label {
         font-size: 0.8rem;
         color: #2a2a2a;
         line-height: 2rem;
+    }
+    .boton-cielo-container{
+        position:fixed;
+        bottom: 6rem;
+        right: -3rem;
+        width: 5rem;
+        height: 4rem;
+        z-index: -1;
+    }
+    
+    .boton-arriba{
+        width: 0rem;
+        height: 0rem;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: .2s;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+    
+    .boton-arriba i{
+        position: absolute;
+        font-size: 1.5rem;
+        top: 48%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        color: #2a2a2a;
+        transition: .2s;
+    }
+    
+    .show{
+        z-index: 10;
+    }
+    
+    .show .boton-arriba{
+        animation: popup .4s ease-in-out;
+        width: 6rem;
+        height: 6rem;
+        z-index: 11;
+    }
+    
+    .show i{
+        transform: translate(-50%, -50%) scale(1);
+    }
+    
+    @keyframes popup{
+        0%{
+            width: 0rem;
+            height: 0rem;
+        }
+        50%{
+            width: 5rem;
+            heigth: 5rem;
+        }
+        100%{
+            width: 6rem;
+            height: 6rem;
+        }
     }
 }
