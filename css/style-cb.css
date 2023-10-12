@@ -355,8 +355,70 @@ form label {
     margin-left: 0.5rem;
     margin-top: 0.5rem;
 }
+.boton-cielo-container{
+    position:fixed;
+    bottom: 6rem;
+    right: 0rem;
+    width: 6rem;
+    height: 6rem;
+    z-index: -1;
+}
 
-#arrow-up {
+.boton-arriba{
+    width: 0rem;
+    height: 0rem;
+    background:#fff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .2s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.boton-arriba i{
+    position: absolute;
+    font-size: 3rem;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: #2a2a2a;
+    transition: .2s;
+}
+
+.show{
+    z-index: 10;
+}
+
+.show .boton-arriba{
+    animation: popup .4s ease-in-out;
+    width: 6rem;
+    height: 6rem;
+    z-index: 11;
+}
+
+.show i{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes popup{
+    0%{
+        width: 0rem;
+        height: 0rem;
+    }
+    50%{
+        width: 5rem;
+        heigth: 5rem;
+    }
+    100%{
+        width: 6rem;
+        height: 6rem;
+    }
+}
+
+
+/*#arrow-up {
     text-align: right;
     color: #2a2a2a;
     margin-right: 1rem;
@@ -365,7 +427,7 @@ form label {
 
 #arrow-up a {
     color: #2a2a2a;
-}
+}*/
 
 .footer {
     display: grid;
