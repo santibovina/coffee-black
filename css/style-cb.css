@@ -469,6 +469,8 @@ form label {
     padding: 0.3rem;
     line-height: 2rem;
 }
+
+
 /* Media Query 320px */
 @media (max-width: 320px) {
     .menu-navegador {
@@ -765,8 +767,8 @@ form label {
     }
 }
 
-/* Media Query 800px */
-@media (max-width: 800px) {
+/* Media Query 321/800px */
+@media (min-width: 321px) and (max-width: 800px) {
     .menu-navegador {
         border-bottom: none;
         margin-top: 2rem;
@@ -1061,8 +1063,8 @@ form label {
     }
 }
 
-/* Media Query 1024px */
-@media (min-width: 1024px) and (max-width: 1044px) {
+/* Media Query 801/1044px */
+@media (min-width: 801px) and (max-width: 1044px) {
     .menu-navegador {
         display: flex;
         height: 4rem;
