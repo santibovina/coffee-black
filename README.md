@@ -12,4 +12,4 @@ Integrantes:
 El nombre del proyecto es **COFFEE:BLACK**.  
 Es un blog en el que se habla sobre distintos tipos de café, baristas por el mundo, lugares, novedades.  
 Se creó utilizando **HTML, CSS y JS**.  
-Se puede acceder al sitio a través del siguiente link: **www.coffee-black.netlify.app**.
+Se puede acceder al sitio a través del siguiente link: **https://www.coffee-black.netlify.app**.
