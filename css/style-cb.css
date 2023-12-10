@@ -273,7 +273,7 @@ ul li a:hover {
     height: 35rem;
     justify-content: start;
     align-items: center;
-    margin-top: 6rem;
+    margin-top: 15rem;
 }
 
 .contenido-formulario p {
@@ -479,6 +479,63 @@ form label {
     color: #2a2a2a;
     padding: 0.3rem;
     line-height: 2rem;
+}
+
+#swiper {
+    height: 20rem;
+}
+
+#swiper .contenido-titulo {
+    margin-top: 6rem;
+}
+
+.swiper-container {
+    width: auto;
+    display: flex;
+    flex-wrap: row wrap;
+    overflow: hidden;
+    margin-left: 10%;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    font-size: 0.9rem;
+    padding: 8px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 0.5rem;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: rgb(14, 118, 126);
+}
+
+.tarjeta {
+    padding: 1rem;
+    border: solid rgb(14, 118, 126) 1px;
+    height: auto;
+    border-radius: 5px;
+    width: 16rem;
+}
+
+.tarjeta img {
+    width: 35%;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.tarjeta p {
+    padding: 10px;
+    font-weight: 400;
 }
 
 
