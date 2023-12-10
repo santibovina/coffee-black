@@ -35,7 +35,7 @@ const cargarProductos = async () => {
         slidesPerView: 3,
         spaceBetween: 1,
         autoplay: {
-            delay: 1800,
+            delay: 3000,
         },
     });
 };
