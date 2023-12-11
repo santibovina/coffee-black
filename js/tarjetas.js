@@ -9,8 +9,8 @@ const cargarProductos = async () => {
             <div class="swiper-slide">
                 <div class="tarjeta">
                     <p>${producto.descripcion}</p>
-                    <img src= ${producto.imagen_url} alt="imagen">
-                    <p>${producto.precio}</p>
+                    <img src="https://i.postimg.cc/tR8B4Z95/merch-cb.png" alt="imagen">
+                    <p>$${producto.precio}</p>
                     <br>
                     <button>
                         <p>Lo quiero!</p>

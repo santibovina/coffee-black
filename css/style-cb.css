@@ -273,7 +273,7 @@ ul li a:hover {
     height: 35rem;
     justify-content: start;
     align-items: center;
-    margin-top: 15rem;
+    margin-top: 31rem;
 }
 
 .contenido-formulario p {
@@ -486,7 +486,7 @@ form label {
 }
 
 #swiper .contenido-titulo {
-    margin-top: 6rem;
+    margin-top: 4rem;
 }
 
 .swiper-container {
@@ -528,7 +528,8 @@ button:hover {
 }
 
 .tarjeta img {
-    width: 35%;
+    height: min-content;
+    width: 12rem;
     padding: 10px;
     border-radius: 10px 10px 0px 0px;
 }
