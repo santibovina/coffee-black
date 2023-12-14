@@ -8,13 +8,18 @@ const cargarProductos = async () => {
         slides += `
             <div class="swiper-slide">
                 <div class="tarjeta">
-                    <p>${producto.descripcion}</p>
-                    <img src="https://i.postimg.cc/tR8B4Z95/merch-cb.png" alt="imagen">
-                    <p>$${producto.precio}</p>
-                    <br>
-                    <button>
-                        <p>Lo quiero!</p>
-                    </button>
+                    <div class="tarjeta__imagen">
+                        <img src="https://i.postimg.cc/tR8B4Z95/merch-cb.png" alt="imagen">
+                    </div>
+                    <div class="tarjeta__texto__boton">
+                        <p>${producto.descripcion}</p>
+                        <p>$${producto.precio}</p>
+                        <div class="tarjeta__boton">
+                            <button>
+                                <p>Lo quiero!</p>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         `;
@@ -32,7 +37,7 @@ const cargarProductos = async () => {
 
     // Inicializar Swiper
     const swiper = new Swiper('.swiper-container', {
-        slidesPerView: 3,
+        slidesPerView: 1,
         spaceBetween: 1,
         autoplay: {
             delay: 3000,
