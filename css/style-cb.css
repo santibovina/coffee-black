@@ -532,12 +532,13 @@ button:hover {
     flex-wrap: wrap;
     border: solid rgb(14, 118, 126) 1px;
     height: 15rem;
-    border-radius: 5px;
+    border-radius: 1rem;
     width: 23rem;
     margin-left: 29.5rem;
 }
 
 .tarjeta__imagen img {
+    margin-left: 1rem;
     margin-top: 1.2rem;
     height: 12rem;
 }
