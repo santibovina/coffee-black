@@ -505,10 +505,9 @@ form label {
     overflow: hidden; /* Evitar que las imágenes se salgan de los bordes */
   }
 
-/* .swiper-wrapper {
-    justify-content: center;
-    overflow: hidden;
-} */
+.swiper-wrapper {
+    height: 96%;
+}
 
 button {
     font-size: 0.9rem;
